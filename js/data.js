@@ -8,14 +8,10 @@ const METHODS = [
   { key: "Narrowband", label: "Narrowband" },
   { key: "Wideband",  label: "Wideband"  },
   { key: "UDM+",      label: "UDM+"      },
-  { key: "FLowHigh",  label: "FLowHigh"  },
   { key: "TRAMBA",  label: "TRAMBA"  },
-  { key: "EBEN",  label: "EBEN"  },
-  { key: "BBWE",  label: "BBWE"  },
-  { key: "NVSR",      label: "NVSR"      },
+  { key: "FLowHigh",  label: "FLowHigh"  },
   { key: "AP-BWE",    label: "AP-BWE"    },
-  { key: "mdctGAN",   label: "mdctGAN"   },
-  { key: "StreamBWE", label: "StreamBWE" },
+  { key: "StreamWSR", label: "StreamWSR" },
 ];
 
 // Sections + sample keys (file stem without extension)
@@ -37,33 +33,5 @@ const SECTIONS = [
     title: "III. 2 kHz to 16 kHz",
     dir: "2kto16k",
     samples: ["p361_158", "p363_209", "p364_164", "p376_299", "s5_334"],
-  },
-  {
-    id: "24kto48k",
-    title: "IV. 24 kHz to 48 kHz",
-    dir: "24kto48k",
-    hideMethods: ["BBWE"],
-    samples: ["p360_324", "p364_198", "p364_256", "p376_199", "s5_186"],
-  },
-  {
-    id: "16kto48k",
-    title: "V. 16 kHz to 48 kHz",
-    dir: "16kto48k",
-    hideMethods: ["BBWE"],
-    samples: ["p360_249", "p362_054", "p364_089", "p364_282", "p364_297"],
-  },
-  {
-    id: "12kto48k",
-    title: "VI. 12 kHz to 48 kHz",
-    dir: "12kto48k",
-    hideMethods: ["BBWE"],
-    samples: ["p362_232", "p376_093", "p376_164", "s5_307", "s5_329"],
-  },
-  {
-    id: "8kto48k",
-    title: "VII. 8 kHz to 48 kHz",
-    dir: "8kto48k",
-    hideMethods: ["BBWE"],
-    samples: ["p361_033", "p361_358", "p376_148", "s5_212", "s5_390"],
   },
 ];
